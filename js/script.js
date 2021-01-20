@@ -52,8 +52,8 @@ $(function(){
       // link.addClass("on_bar");
       link.css({
         "font-size":".85rem",
-        "color":"#2b2b2b"
-      })
+        "color":"#000"
+      });
     }else{
       $("#head").removeClass("on_scroll");
       $(".header_inner .bar, .header_inner .logo").removeClass("off");
