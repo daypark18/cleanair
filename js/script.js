@@ -1,5 +1,9 @@
 $(function(){
 
+  var col2 = $(".four .cont_inner .content.con .layer.col2");
+  var col3 = $(".four .cont_inner .content.con .layer.col3");
+  var col4 = $(".four .cont_inner .content.con .layer.col4");
+
   var parell = { }
     parell.winHT = $(window).height();
     parell.distance = parell.winHT;
@@ -62,6 +66,37 @@ $(function(){
         "font-size":"1rem",
         "color":"#fff"
       })
+    }
+
+    if($(window).scrollTop() > (parell.winHT * 2)+500){
+      col2.css({
+        "left":"25%",
+        "visibility":"visible",
+        "opacity":1
+      });
+      // col3.css({
+      //   "left":"50%",
+      //   "visibility":"visible",
+      //   "opacity":1
+      //
+      // });
+      setTimeout(function(){
+        col3.css({
+          "left":"50%",
+          "visibility":"visible",
+          "opacity":1
+        });
+      },1000);
+      setTimeout(function(){
+        col4.css({
+          "left":"75%",
+          "visibility":"visible",
+          "opacity":1
+        });
+      },2000);
+
+    }else{
+
     }
 
 

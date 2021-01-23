@@ -182,10 +182,10 @@ overflow: hidden;
   opacity:0.5;
   background: url("../img/benefits_lg.png") no-repeat 0 0;
 }
-.con_bg .bg_wrapper .more span{
+.con_bg .bg_wrapper .about span{
   display: block;
-  width: 412px; height: 115px; opacity: 0.5;
-  background: url("../img/more_lg.png") no-repeat 0 0;
+  width: 470px; height: 110px; opacity: 0.5;
+  background: url("../img/about.png") no-repeat 0 0;
 }
 .con_bg .bg_wrapper .features span{
   display: block;
@@ -253,8 +253,8 @@ overflow: hidden;
   -o-transition: all .3s;
   transition: all .3s ease-in;
 }
-.left .child{background: url("../img/car.png")no-repeat center;}
-.mid .child{background: url("../img/car_ac.png") no-repeat center;}
+.left .child{background: url("../img/allergen.png")no-repeat center;}
+.mid .child{background: url("../img/car.png") no-repeat center;}
 .right .child{background: url("../img/fresh_air.png") no-repeat center;}
 
 .child:hover{
@@ -349,7 +349,45 @@ overflow: hidden;
   flex:1; height:100%;
 }
 .thr .con_bg .bg_wrapper .product_img{}
-.thr .con_bg .bg_wrapper .product_img span:first-child{
+
+/* .detail:hover:after{
+  content:""; display: block;
+  opacity: 1;
+  width: 190px; height:190px;
+  background: url("../img/4layers_txt.png")no-repeat center;
+  z-index: 30;
+  position: absolute;
+  right:0; bottom:0;
+  transition: all .3s ease-in;
+  }
+*/
+.thr .con_bg .bg_wrapper .product_img .detail_txt{
+  display: block;
+  width: 200px; height:200px;
+  background: url("../img/4layers_txt.png")no-repeat center;
+  z-index: 19;
+  position: absolute;
+  right:5%; bottom:35%;
+}
+
+.thr .con_bg .bg_wrapper .product_img .detail{
+  display: block;
+  visibility: visible; opacity: 1;
+  width: 200px; height:200px;
+  background: url("../img/4layers.png")no-repeat center;
+  z-index: 20;
+  border-radius: 50%;
+  border:5px solid #fff;
+  position: absolute;
+  right:5%; bottom:35%;
+  transition: all .3s ease-in;
+}
+
+.thr .con_bg .bg_wrapper .product_img .detail:hover{
+  visibility: hidden; opacity: 0;
+}
+
+.thr .con_bg .bg_wrapper .product_img span:nth-child(3){
   display: block;
   width: 650px; height:423px;
   background: url("../img/product.png") no-repeat 0 0;
@@ -376,16 +414,29 @@ overflow: hidden;
   width:25%; height:100%;
   /* flex:1; */
 }
-.four .cont_inner .content.con .layer.col1{position: absolute;top:0;left:0;}
-.four .cont_inner .content.con .layer.col2{position: absolute;top:0;left:25%;}
-.four .cont_inner .content.con .layer.col3{position: absolute;top:0;left:50%;}
-.four .cont_inner .content.con .layer.col4{position: absolute;top:0;left:75%;}
+.four .cont_inner .content.con .layer.col1{position: absolute;top:0;left:0; transition: all .75s ease-in;}
+.four .cont_inner .content.con .layer.col2{
+  position: absolute;top:0;left:0;
+  visibility: hidden; opacity: 0;
+  transition: all .75s ease-in;
+}
+.four .cont_inner .content.con .layer.col3{
+  position: absolute;top:0;left:25%;
+  visibility: hidden; opacity: 0;
+  transition: all .75s ease-in;
+}
+.four .cont_inner .content.con .layer.col4{
+  position: absolute;top:0;left:50%;
+  visibility: hidden; opacity: 0;
+  transition: all .75s ease-in;
+}
 
 .four .cont_inner .content.con .layer.col1 span{
   /* border:2px solid black; */
   margin: auto;
   display: block;
   width:250px; height:400px;
+  z-index: 30;
   background: url("../img/layer01.png")no-repeat 0 0;
 }
 .four .cont_inner .content.con .layer.col2 span{
