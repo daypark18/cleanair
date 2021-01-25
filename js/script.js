@@ -1,8 +1,6 @@
 $(function(){
 
-  var col2 = $(".four .cont_inner .content.con .layer.col2");
-  var col3 = $(".four .cont_inner .content.con .layer.col3");
-  var col4 = $(".four .cont_inner .content.con .layer.col4");
+
 
   var parell = { }
     parell.winHT = $(window).height();
@@ -12,6 +10,18 @@ $(function(){
     parell.length = $(document).find(".page").length;
 
   var link = $("header .menu > li > a");
+  var col2 = $(".four .cont_inner .content.con .layer.col2");
+  var col3 = $(".four .cont_inner .content.con .layer.col3");
+  var col4 = $(".four .cont_inner .content.con .layer.col4");
+
+
+  setTimeout(function(){
+    $(".copy").css({
+      "visibility":"visible",
+      "opacity":1
+    });
+  },1000);
+
 
     $(window).scroll(function(){
 

@@ -120,7 +120,17 @@ header .menu > li:hover:after{
   transition: width .35s ease-in-out;
 }
 
-
+span.copy{
+  display: block;
+  visibility: hidden; opacity: 0;
+  width:560px; height:70px;
+  background: url("../img/main_copy.png")no-repeat 0 0;
+  position: absolute;
+  top:50%; left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  transition: all .75s ease-in;
+}
 
 .visual{
   /* border:3px dotted blue; */
