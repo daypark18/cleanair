@@ -41,7 +41,7 @@ header{
   background: #e7e7e7;
   opacity:0.5;
   height:70px;
-  z-index: 1;
+  z-index: 40;
 }
 
 .off{visibility: hidden; opacity: 0;}
@@ -94,7 +94,7 @@ header .menu > li{
   width:130px;
   text-align: center;
   display: inline-block;
-  color:#fff;
+  color:#e7e7e7;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
   /* font-family: "PFHandbookPro"; */
@@ -105,7 +105,7 @@ header .menu > li:hover{
 
 header .menu > li > a{
   display: block;
-  color:#fff;
+  color:#e7e7e7;
   /* padding:0 25px; */
   font-size:1rem;
 }
@@ -113,7 +113,7 @@ header .menu > li > a{
 header .menu > li:after{
   content: ""; display: inline-block;
   width: 0; height:2px;
-  background:#fff;
+  background:#e7e7e7;
 }
 header .menu > li:hover:after{
   width: 100px;
@@ -297,8 +297,8 @@ overflow: hidden;
 .sec .content .con_box .txt_box .bar{ width:35%; height:3px;margin:20px 0; background:#fff;}
 /* .sec .content .con_box.left .txt_box .bar{background:#fff;}
 .sec .content .con_box.mid .txt_box .bar{background:#213f62;} */
-.sec .content .con_box .txt_box h4{font-size:1.25rem; line-height: 1.5rem;font-weight: 700;}
-.sec .content .con_box .txt_box p{font-size:1rem;}
+.sec .content .con_box .txt_box h4{font-size:1.25rem; line-height: 1.65rem;font-weight: 700;}
+.sec .content .con_box .txt_box p{font-size:1rem; line-height:1.25rem;}
 
 .con_bg{
   position: relative;

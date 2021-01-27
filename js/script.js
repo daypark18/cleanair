@@ -13,6 +13,7 @@ $(function(){
   var col2 = $(".four .cont_inner .content.con .layer.col2");
   var col3 = $(".four .cont_inner .content.con .layer.col3");
   var col4 = $(".four .cont_inner .content.con .layer.col4");
+  var menu_bar = $("header .menu > li:after");
 
 
   setTimeout(function(){
