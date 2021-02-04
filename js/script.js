@@ -74,7 +74,7 @@ $(function(){
       $(".header_inner .bar, .header_inner .logo").removeClass("off");
       // link.removeClass("on_bar");
       link.css({
-        "font-size":"1rem",
+        "font-size":"1.25rem",
         "color":"#fff"
       })
     }
