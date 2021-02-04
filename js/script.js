@@ -66,7 +66,7 @@ $(function(){
       $(".header_inner .bar, .header_inner .logo").addClass("off");
       // link.addClass("on_bar");
       link.css({
-        "font-size":".85rem",
+        "font-size":"1.15rem",
         "color":"#000"
       });
     }else{
