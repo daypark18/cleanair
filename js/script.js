@@ -17,7 +17,7 @@ $(function(){
 
 
   setTimeout(function(){
-    $(".copy").css({
+    $(".copy,.box").css({
       "visibility":"visible",
       "opacity":1
     });

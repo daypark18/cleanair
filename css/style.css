@@ -10,13 +10,13 @@
       font-family: "PFHandbookPro";
       font-weight: bold;
 	    font-style: bold;
-      src:url("../font/PFHandbookPro-Medium.otf") format("opentype");
+      src:url("../font/PFHandbookPro-Bold.otf") format("opentype");
     }
 @font-face {
       font-family: "PFHandbookPro";
-      font-weight: thin;
-	    font-style: thin;
-      src: url("../font/PFHandbookPro-Thin.otf") format("opentype");
+      font-weight: lighter;
+	    font-style: lighter;
+      src: url("../font/PFHandbookPro-Light.otf") format("opentype");
 }
 
 @font-face {
@@ -168,15 +168,27 @@ header .menu > li:hover:after{
   width: 110px;
   transition: width .35s ease-in-out;
 }
+.box{
+  width:430px; height:180px;
+  visibility: hidden;
+  opacity: 0;
+  background:#004c88;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top:55%; left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  transition: all .75s ease-in;
+}
 
 span.copy{
   display: block;
   visibility: hidden; opacity: 0;
-  width:575px; height:54px;
-  background: url("../img/main_copy_txt.png")no-repeat 0 0;
+  width:500px; height:250px;
+  background: url("../img/main_copy.png")no-repeat 0 0;
   position: absolute;
-  top:50%; left:50%;
-  transform: translate(-50%, -50%);
+  top:55%; left:50%;
+  transform: translate(-50%, -55%);
   z-index: 10;
   transition: all .75s ease-in;
 }
@@ -220,40 +232,40 @@ overflow: hidden;
 
 .con_bg .bg_wrapper .main_txt{
   position: absolute;
-  top:30px;
-  left:-30px;
+  top:40px;
+  left:-20px;
   z-index: 5;
 }
 .con_bg .bg_wrapper .mockup span{
   display: block;
-  width: 497px; height: 100px;
+  width: 468px; height: 100px;
   opacity:0.5;
   background: url("../img/choose.png") no-repeat 0 0;
 }
 .con_bg .bg_wrapper .benefits span{
   display: block;
-  width: 606px; height: 115px;
+  width: 562px; height: 100px;
   opacity:0.5;
-  background: url("../img/benefits_lg.png") no-repeat 0 0;
+  background: url("../img/benefits.png") no-repeat 0 0;
 }
 .con_bg .bg_wrapper .about span{
   display: block;
-  width: 470px; height: 110px; opacity: 0.5;
+  width: 389px; height: 100px; opacity: 0.5;
   background: url("../img/about.png") no-repeat 0 0;
 }
 .con_bg .bg_wrapper .features span{
   display: block;
-  width: 718px; height: 115px; opacity: 0.5;
+  width: 593px; height: 99px; opacity: 0.5;
   background: url("../img/features.png") no-repeat 0 0;
 }
 .con_bg .bg_wrapper .safety span{
   display: block;
-  width: 516px; height: 150px; opacity: 0.5;
+  width: 434px; height: 99px; opacity: 0.5;
   background: url("../img/safety.png") no-repeat 0 0;
 }
 .con_bg .bg_wrapper .why span{
   display: block;
-  width: 382px; height: 150px; opacity: 0.5;
+  width: 272px; height: 97px; opacity: 0.5;
   background: url("../img/why.png") no-repeat 0 0;
 }
 .title{
@@ -266,9 +278,9 @@ overflow: hidden;
 .title .sub_txt{line-height: 115px;}
 
 .title .sub_txt h2{
-  font-family: 'Gotham', sans-serif;
-  font-weight: 200;
-  font-size: 2.5rem; color:#182a58;
+  font-family: 'PFHandbookPro', sans-serif;
+  font-weight: normal; text-transform: uppercase;
+  font-size: 3.75rem; color:#182a58;
   letter-spacing: 1px;
   position: absolute; z-index: 10;
   /* position: absolute; bottom:35px; left:450px; */
@@ -362,7 +374,7 @@ overflow: hidden;
 /* .sec .content .con_box.left .txt_box .bar{background:#fff;}
 .sec .content .con_box.mid .txt_box .bar{background:#213f62;} */
 .sec .content .con_box .txt_box h4{line-height: 1.65rem;font-weight: bold;}
-.sec .content .con_box .txt_box p{line-height:1.5rem;font-weight: thin;}
+.sec .content .con_box .txt_box p{line-height:1.5rem;font-weight: lighter;}
 
 .con_bg{
   /* border:2px dotted red; */
@@ -435,7 +447,7 @@ overflow: hidden;
   color:#464646;
 }
 .thr .content .con_icons .row .row_txt_box h4{text-transform: uppercase; font-weight: bold;}
-.thr .content .con_icons .row .row_txt_box p{font-weight: thin; line-height: 25px;}
+.thr .content .con_icons .row .row_txt_box p{font-weight: lighter; line-height: 25px;}
 
 .thr .cont_inner .content .con_txt{
   position: relative;
@@ -661,7 +673,7 @@ td > span{
   font-size:2rem; text-transform: uppercase; font-weight: bold;
   padding-top:35px;
 }
-.safe .content .con_wrap .row .row_sec p{font-size:1.5rem; font-weight: thin;}
+.safe .content .con_wrap .row .row_sec p{font-size:1.5rem; font-weight: lighter;}
 
 
 .safe .content .con_wrap .row .row_sec .safety span{
@@ -765,7 +777,7 @@ td > span{
   font-size:2.75rem; font-weight: 100; letter-spacing: -1px;
   line-height: 3rem; padding: 10px 0;
 }
-.mock .content .mock_txt_box p{font-weight: thin; padding-top:25px;color:#464646;}
+.mock .content .mock_txt_box p{font-weight: lighter; padding-top:25px;color:#464646;}
 .mock .content .mock_txt_box ul{width:90%;}
 .mock .content .mock_txt_box ul >li{
   display: inline-block;
