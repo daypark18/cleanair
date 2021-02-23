@@ -184,7 +184,7 @@ header .menu > li:hover:after{
 span.copy{
   display: block;
   visibility: hidden; opacity: 0;
-  width:500px; height:250px;
+  width:850px; height:230px;
   background: url("../img/main_copy.png")no-repeat 0 0;
   position: absolute;
   top:55%; left:50%;
