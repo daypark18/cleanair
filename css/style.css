@@ -340,7 +340,7 @@ overflow: hidden;
   -o-transition: all .3s;
   transition: all .3s ease-in;
 }
-.left .child{background: url("../img/car.png")no-repeat center;}
+.left .child{background: url("../img/allergen.png")no-repeat center;}
 .mid .child{background: url("../img/car_ac.png") no-repeat center;}
 .right .child{background: url("../img/fresh_air.png") no-repeat center;}
 
