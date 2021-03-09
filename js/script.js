@@ -14,7 +14,7 @@ $(function(){
   var col3 = $(".four .cont_inner .content.con .layer.col3");
   var col4 = $(".four .cont_inner .content.con .layer.col4");
   var menu_bar = $("header .menu > li:after");
-
+  var to_top = $(".top span")
 
   setTimeout(function(){
     $(".copy,.box").css({
@@ -108,10 +108,35 @@ $(function(){
 
     }else{
 
-    }
+    };
 
+    if($(window).scrollTop() >= (parell.winHT * 1)){
+      to_top.css({
+        "visibility":"visible",
+        "opacity": .5
+      })
+    }else{to_top.css({
+      "visibility":"hidden",
+      "opacity": 0
+    })}
 
+    to_top.on("click", function(e){
+      e.preventDefault();
+      $("html, body").stop().animate({
+        scrollTop: 0
+      }, '500');
+      });
     });
+
+    to_top.hover(function(){
+      $(this).addClass("btn_on");
+      $(this).animate({opacity: 1}, 100)
+    },
+    function(){
+      $(this).removeClass("btn_on");
+      $(this).animate({opacity: 0.5}, 100)
+    }
+   )
 
     $(".page").each(function (index, element) {
 

@@ -47,6 +47,23 @@ h3{font-family: "PFHandbookPro", sans-serif; font-size: 1.75rem;}
 h4{font-family: "PFHandbookPro", sans-serif; font-size: 1.5rem;}
 
 .container{min-width: 1280px; background:#e7e7e7;}
+.top{}
+.top span{
+  border-radius: 50%;
+  visibility: hidden;
+  width: 62px; height:62px;
+  position: fixed; right:40px; bottom:40px;
+  z-index: 100;
+  opacity: 0;
+  background: url("../img/btn_top.png")no-repeat 0 0;
+  transition: all .3s ease-in;
+}
+.btn_on{
+  box-shadow: 3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  opacity: 1;
+}
 .page{
   /* border:2px solid black; */
   height: 100vh; position: relative;
@@ -660,12 +677,19 @@ td > span{
 }
 .safe .content .con_wrap .row .row_sec .inner{
   /* border:1px solid red; */
-  width:80%;
+  /* width:80%; */
+  /* height:auto;  */
+  width: 92.5%;
+  background: #F5F5F5;
+  padding: 5% 0;
+  height:90%;
   justify-content: center; align-items: center;
-  height:auto; margin:auto;
+  margin:auto;
   position: absolute; top:50%; left:50%; transform:translate(-50%, -50%);
 }
-.safe .content .con_wrap .row .row_sec.wht{height:70%; border-right: 1px solid #fff; border-left:1px solid #fff;}
+.safe .content .con_wrap .row .row_sec.wht{
+  height:70%; border-right: 1px solid #fff; border-left:1px solid #fff;
+}
 .safe .content .con_wrap .row .row_sec h2, .safe .content .con_wrap .row .row_sec p{
   font-family: "PFHandbookPro", sans-serif;color:#464646;
 }
@@ -673,7 +697,7 @@ td > span{
   font-size:2rem; text-transform: uppercase; font-weight: bold;
   padding-top:35px;
 }
-.safe .content .con_wrap .row .row_sec p{font-size:1.5rem; font-weight: lighter;}
+.safe .content .con_wrap .row .row_sec p{ font-size:1.5rem; font-weight: lighter;}
 
 
 .safe .content .con_wrap .row .row_sec .safety span{
